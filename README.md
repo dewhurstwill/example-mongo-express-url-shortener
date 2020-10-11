@@ -44,4 +44,9 @@ npm run lint
 npm run dev
 ```
 
+## TODO
+
+- Finalise backend
+- Build simple frontend
+
 Based-on create-express-api (https://www.npmjs.com/package/create-express-api) by CJ R. <cj@null.computer> (https://w3cj.now.sh)
