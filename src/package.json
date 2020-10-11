@@ -1,0 +1,34 @@
+{
+  "name": "example-mongo-express-url-shortener",
+  "version": "1.0.0",
+  "description": "An example CRUD API built using MongoDB & ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint --fix src"
+  },
+  "keywords": [],
+  "author": "Will Dewhurst (https://github.com/dewhurstwill), Inspired by CJ R. <cj@null.computer> (https://w3cj.now.sh)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dewhurstwill/example-mongo-express-url-shortener.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "monk": "^7.3.2",
+    "morgan": "^1.10.0",
+    "nanoid": "^3.1.12"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4"
+  }
+}
