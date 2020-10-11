@@ -11,6 +11,8 @@ Includes API Server utilities:
   * Joi is a powerful schema description language and data validator for JavaScript
 * [monk](https://www.npmjs.com/package/monk)
   * Monk is middleware used for consuming MongoDB within Node.JS
+* [nanoid](https://www.npmjs.com/package/nanoid)
+  * NanoId is a tiny, secure, URL-friendly, unique string ID generator for JavaScript
 
 
 Development utilities:
