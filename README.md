@@ -11,7 +11,10 @@ Includes API Server utilities:
   * Joi is a powerful schema description language and data validator for JavaScript
 * [monk](https://www.npmjs.com/package/monk)
   * Monk is middleware used for consuming MongoDB within Node.JS
-
+* [nanoid](https://www.npmjs.com/package/nanoid)
+  * NanoId is a tiny, secure, URL-friendly, unique string ID generator for JavaScript
+* [express-rate-limit](https://www.npmjs.com/package/express-rate-limit)
+  * express-rate-limit is a basic rate-limiting middleware for Express
 
 Development utilities:
 
@@ -29,19 +32,33 @@ Development utilities:
 ## Setup
 
 ```
+cd server
 npm install
+cd ../client
+yarn install
+npm run build
+# Copy ./build to ../server/client/build
+cd ../server/client/build
+# Edit index.html
+# Format HTML
+# Copy the JavaScript script that isn't in an external file to /static/js/core.js
+# ^ this is to avoid a frontend error 
+# Replace the script with <script src="/static/js/core.js"></script>
+# Set the MONGODB_URI to <mongo_server>/url-shortener
+npm run start
+
 ```
 
-## Lint
+## Development WebApp Server
 
 ```
-npm run lint
+npm run start
 ```
 
-## Development
+## Development Backend Server
 
 ```
 npm run dev
 ```
 
-Based-on create-express-api (https://www.npmjs.com/package/create-express-api) by CJ R. <cj@null.computer> (https://w3cj.now.sh)
+Based-on create-react-app && create-express-api (https://www.npmjs.com/package/create-express-api) by CJ R. <cj@null.computer> (https://w3cj.now.sh)
