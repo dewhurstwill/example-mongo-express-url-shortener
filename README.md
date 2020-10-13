@@ -61,4 +61,12 @@ npm run start
 npm run dev
 ```
 
+## TODO
+
+- Finalise backend
+- Build simple frontend
+
+
+## Hat-tip 🎩
+
 Based-on create-react-app && create-express-api (https://www.npmjs.com/package/create-express-api) by CJ R. <cj@null.computer> (https://w3cj.now.sh)
