@@ -7,7 +7,7 @@ RUN npm install
 
 FROM node:10-alpine as deploy
 USER node
-ENV MONGODB_URI "172.17.0.3/url-shortener"
+ENV MONGODB_URI "localhost/url-shortener"
 ENV PORT 3000
 WORKDIR /home/node/app
 COPY --from=build --chown=node /home/node/app .

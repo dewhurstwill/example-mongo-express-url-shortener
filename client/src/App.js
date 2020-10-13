@@ -24,6 +24,10 @@ const createShortUrl = ({ url, slug }) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body)
   })
+  .then(response => {
+    if(response.status === 429) throw new Error("Slow mode enabled, please try again later");
+    return response
+  })
   .then(response => response.json())
   .then(data => {
     if(data.message && data.message === "Success") return window.location.href = `/?slug=${data.slug}`;
