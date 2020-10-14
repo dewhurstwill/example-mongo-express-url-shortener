@@ -13,9 +13,8 @@ urls.createIndex({ slug: 1 }, { unique: true });
 // Joi Schema
 const createSchema = Joi.object({
   // Validate Slug
-  // Must be a string, not null
-  // and follow RegEx Pattern (a to z, 0 to 9, _ or -, case insensitive)
-  slug: Joi.string().trim().pattern(new RegExp(/[a-z0-9\-_]/i)),
+  // Must be a string, not null, alphanumeric (a-zA-Z0-9)
+  slug: Joi.string().trim().alphanum(),
   // Validate Url
   // Must be a string, not null, must be a uri and is required
   url: Joi.string().trim().uri().required(),
@@ -37,6 +36,8 @@ router.post('/create', createApiLimiter, async (req, res, next) => {
     const validated = await createSchema.validateAsync(req.body);
     // Deconstruct slug from the validated body
     let { slug } = validated;
+    // Convert slug to a lowercase string
+    slug = slug.toLowerCase();
     // If not slug
     if (!slug) {
       slug = nanoid(5); // Generate an ID to use as a slug
@@ -44,10 +45,12 @@ router.post('/create', createApiLimiter, async (req, res, next) => {
       // Check if the user provided slug exists in the database
       const slugExists = await urls.findOne({ slug });
       // If slug exists, throw an error
-      if (slugExists) throw new Error('Slug in use, 🥞');
+      if (slugExists) {
+        return res.json({
+          message: 'Slug in use'
+        });
+      }
     }
-    // Convert slug to a lowercase string
-    slug = slug.toLowerCase();
     // Insert url into the database with the slug
     const created = await urls.insert({
       url: validated.url,
