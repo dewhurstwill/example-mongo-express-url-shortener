@@ -14,10 +14,10 @@ urls.createIndex({ slug: 1 }, { unique: true });
 const createSchema = Joi.object({
   // Validate Slug
   // Must be a string, not null, alphanumeric (a-zA-Z0-9)
-  slug: Joi.string().trim().alphanum(),
+  slug: Joi.string().trim().alphanum().max(128),
   // Validate Url
   // Must be a string, not null, must be a uri and is required
-  url: Joi.string().trim().uri().required(),
+  url: Joi.string().trim().uri().required().max(512)
 });
 
 // Express Router
