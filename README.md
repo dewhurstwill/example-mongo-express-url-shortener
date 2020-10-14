@@ -61,11 +61,8 @@ npm run start
 npm run dev
 ```
 
-## TODO
-
-- Finalise backend
-- Build simple frontend
-
+## Example
+[Example](https://short.wdew.uk)
 
 ## Hat-tip 🎩
 
