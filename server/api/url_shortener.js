@@ -37,7 +37,7 @@ router.post('/create', createApiLimiter, async (req, res, next) => {
     // Deconstruct slug from the validated body
     let { slug } = validated;
     // Convert slug to a lowercase string
-    slug = slug.toLowerCase();
+    slug = slug ? slug.toLowerCase() : '';
     // If not slug
     if (!slug) {
       slug = nanoid(5); // Generate an ID to use as a slug
