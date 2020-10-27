@@ -1,6 +1,14 @@
 # example-mongo-express-url-shortener
 An example URL Shortener built using MongoDB, ExpressJS &amp; ReactJS
 
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_example-mongo-express-url-shortener&metric=ncloc)](https://sonarcloud.io/dashboard?id=dewhurstwill_example-mongo-express-url-shortener)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_example-mongo-express-url-shortener&metric=bugs)](https://sonarcloud.io/dashboard?id=dewhurstwill_example-mongo-express-url-shortener)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_example-mongo-express-url-shortener&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=dewhurstwill_example-mongo-express-url-shortener)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_example-mongo-express-url-shortener&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=dewhurstwill_example-mongo-express-url-shortener)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_example-mongo-express-url-shortener&metric=security_rating)](https://sonarcloud.io/dashboard?id=dewhurstwill_example-mongo-express-url-shortener)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_example-mongo-express-url-shortener&metric=sqale_index)](https://sonarcloud.io/dashboard?id=dewhurstwill_example-mongo-express-url-shortener)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_example-mongo-express-url-shortener&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=dewhurstwill_example-mongo-express-url-shortener)
+
 Includes API Server utilities:
 
 * [morgan](https://www.npmjs.com/package/morgan)
