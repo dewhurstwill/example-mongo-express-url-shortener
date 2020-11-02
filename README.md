@@ -39,33 +39,32 @@ Development utilities:
 
 ## Setup
 
-```
-cd server
-npm install
-cd ../client
-yarn install
-npm run build
-# Copy ./build to ../server/client/build
-cd ../server/client/build
-# Edit index.html
-# Format HTML
-# Copy the JavaScript script that isn't in an external file to /static/js/core.js
-# ^ this is to avoid a frontend error 
-# Replace the script with <script src="/static/js/core.js"></script>
-# Set the MONGODB_URI to <mongo_server>/url-shortener
-npm run start
 
-```
+| Steps | Action |
+|-|-|
+| Step 1. | ``` cd server ``` |
+| Step 2. | ``` npm install ``` |
+| Step 3. | ``` cd ../client ``` |
+| Step 4. | ``` yarn install ``` |
+| Step 5. | ``` npm run build ``` |
+| Step 6. | Copy ./build to ../server/client/build |
+| Step 7. | ``` cd ../server/client/build ``` |
+| Step 8. | Edit index.html |
+| Step 9. | Format HTML |
+| Step 10. | Copy the JavaScript script that isn't in an external file to /static/js/core.js < this is to avoid a frontend error |
+| Step 11. | Replace the script with ``` <script src="/static/js/core.js"></script> ``` |
+| Step 12. | Set the MONGODB_URI to ``` <mongo_server>/url-shortener ``` |
+| Step 13. | ``` npm run start ``` |
 
 ## Development WebApp Server
 
-```
+```bash
 npm run start
 ```
 
 ## Development Backend Server
 
-```
+```bash
 npm run dev
 ```
 
