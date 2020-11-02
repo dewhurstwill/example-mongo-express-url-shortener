@@ -69,7 +69,7 @@ npm run dev
 ```
 
 ## Example
-[Example](https://short.wdew.uk)
+[Demo](https://short.wdew.uk) 📱
 
 ## Hat-tip 🎩
 
