@@ -9,8 +9,6 @@ An example URL Shortener built using MongoDB, ExpressJS &amp; ReactJS
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_example-mongo-express-url-shortener&metric=sqale_index)](https://sonarcloud.io/dashboard?id=dewhurstwill_example-mongo-express-url-shortener)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=dewhurstwill_example-mongo-express-url-shortener&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=dewhurstwill_example-mongo-express-url-shortener)
 
-![Website Status](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fshort.wdew.uk)
-
 Includes API Server utilities:
 
 * [morgan](https://www.npmjs.com/package/morgan)
@@ -69,9 +67,6 @@ npm run start
 ```bash
 npm run dev
 ```
-
-## Example
-[Demo](https://short.wdew.uk) 📱
 
 
 ## Hat-tip 🎩
